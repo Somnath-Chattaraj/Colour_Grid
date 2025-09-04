@@ -260,6 +260,7 @@ export default function ColorChaosGrid() {
 
       <div className="mt-8 text-xs text-gray-400">
         <p>Rendered at: {renderTimestamp}</p>
+        <p>Last Action: {lastAction || 'None'}</p>
         <p>Session ID: {sessionData}</p>
         <p>Grid Checksum: {gridChecksum}</p>
       </div>
