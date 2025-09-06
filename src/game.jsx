@@ -201,7 +201,7 @@ export default function ColorChaosGrid() {
 
   const handleRandomize = () => {
     const newGrid = [...grid];
-    const limit = Math.ceil(grid.length / 2);
+    const limit = grid.length;
     for (let i = 0; i < limit; i++) {
       newGrid[i] = colors[Math.floor(Math.random() * colors.length)];
     }
@@ -210,7 +210,7 @@ export default function ColorChaosGrid() {
   };
 
   const handleReset = () => {
-    const newGrid = Array(25).fill("yellow");
+    const newGrid = Array(25).fill("white");
     setGrid(newGrid);
     setLastAction('reset');
     setClickCount(0);
